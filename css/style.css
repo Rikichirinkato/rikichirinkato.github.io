@@ -189,6 +189,7 @@ ul{
     .another-opacity ul{
         display:none;
         float:right;
+        margin-top:53px;
     }
     .menu-btn{
         width:40px;
@@ -285,7 +286,7 @@ ul{
         75%, 98% { margin-left:-300%;}
         100% { margin-left:0;}
     }  
-    .re-3, .re-4, .re-5, .re-6, .re-7, .re-8{
+    .re-3,.re-4.,.re-5,.re-6,.re-7,.re-8 {
         display:none;
     }
 }
@@ -309,6 +310,7 @@ ul{
     .another-opacity ul{
         display:none;
         float:right;
+        margin-top:42px;
     }
     .menu-btn{
         width:40px;
@@ -415,7 +417,7 @@ ul{
         50%, 98% { margin-left:-100%; }
         100% { margin-left:0;}
     } 
-    .re-3,.re-4, .re-5, .re-6, .re-7, .re-8 {
+    .re-3,.re-4.,.re-5,.re-6,.re-7,.re-8 {
         display:none;
     }
 }
@@ -492,6 +494,38 @@ ul{
         0%, 98% { margin-left:0; } 
         100% { margin-left:0;}
     } 
+    .re-1{
+        width: 176px;
+        margin-left:15%;
+    }
+    .re-2{
+        width: 220px; 
+        margin-left:10%;
+    }
+    .re-3{
+        width: 187px; 
+        margin-left:7%;
+    }
+    .re-4{
+        width: 249px;
+        margin-left:5%;
+    }
+    .re-5{
+        width: 246px;
+        margin-left:12%;
+    }
+    .re-6{
+        width: 240px; 
+        margin-left:7%;
+    }
+    .re-7{
+        width: 217px; 
+        margin-left:5%;
+    }
+    .re-8{
+        width: 178px;
+        margin-left:7%;
+    }
 }
 @media(min-width:1200px){
     .another-opacity ul{
@@ -655,59 +689,35 @@ ul{
     font-weight: 300;
     text-align:center;
 }
-.re-1{
-    width: 176px;
-    margin-left:15%;
-}
+
 .re-1 img{
     margin-left:59px;
 }
-.re-2{
-    width: 220px; 
-    margin-left:10%;
-}
+
 .re-2 img{
     margin-left:77px;
 }
-.re-3{
-    width: 187px; 
-    margin-left:7%;
-}
+
 .re-3 img{
     margin-left:50px;
 }
-.re-4{
-    width: 249px;
-    margin-left:5%;
-}
+
 .re-4 img{
     margin-left:95px;
 }
-.re-5{
-    width: 246px;
-    margin-left:12%;
-}
+
 .re-5 img{
     margin-left:92px;
 }
-.re-6{
-    width: 240px; 
-    margin-left:7%;
-}
+
 .re-6 img{
     margin-left:80px;
 }
-.re-7{
-    width: 217px; 
-    margin-left:5%;
-}
+
 .re-7 img{
     margin-left:75px;
 }
-.re-8{
-    width: 178px;
-    margin-left:7%;
-}
+
 .re-8 img{
     margin-left:59px;
 }
