@@ -284,7 +284,10 @@ ul{
         50%, 73% { margin-left:-200%; }
         75%, 98% { margin-left:-300%;}
         100% { margin-left:0;}
-    }   
+    }  
+    .re-3, .re-4, .re-5, .re-6, .re-7, .re-8{
+        display:none;
+    }
 }
 @media (min-width:721px){
     .header{
@@ -412,6 +415,9 @@ ul{
         50%, 98% { margin-left:-100%; }
         100% { margin-left:0;}
     } 
+    .re-3,.re-4, .re-5, .re-6, .re-7, .re-8 {
+        display:none;
+    }
 }
 @media(min-width:1140px){
     .another-opacity ul{
