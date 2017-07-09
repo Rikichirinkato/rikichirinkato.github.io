@@ -25,9 +25,9 @@ window.onload=function(){
     })
     function kreator(event){
            console.log(event)
-            var syd='a'+ Date.now()//$('input[name="name"]').val();
-            var david=Date.now()//$('input[name="earnings"]').val();
-            var paul=Date.now()//$('input[name="children"]').val();
+            var syd=$('input[name="name"]').val();
+            var david=$('input[name="earnings"]').val();
+            var paul=$('input[name="children"]').val();
             var article=document.createElement('article');
             var spanName=document.createElement('span');
             var spanEarnings=document.createElement('span');
