@@ -1,0 +1,14 @@
+window.onload=function(){
+   $('#pic-one').draggable({
+            containment:'.works-examples',
+            cursor:'move'
+        });
+     $('#pic-two').draggable({
+            containment:'.works-examples',
+            cursor:'move'
+        });
+     $('#pic-three').draggable({
+            containment:'.works-examples',
+            cursor:'move'
+        });
+}

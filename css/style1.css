@@ -284,6 +284,15 @@ small{
     height:400px;
     border:11px solid #f2f3f8;
     margin:1%;
+    position: relative;
+}
+.works-examples>*{
+    position:absolute;
+}
+#pic-one,#pic-two,#pic-three{
+    width:3px;
+    height:inherit;
+    background-color:#f2f3f8;
 }
 .footer{
     width:80%;
@@ -459,7 +468,7 @@ small{
         flex-direction:row;
         align-items: center;
         justify-content:space-around;
-        background-image:url(../img/bgimg.jpg);
+        background-image:url(../img/hom/bgimg.jpg);
     }
     .nominations img{
         margin-left:0;
@@ -471,11 +480,6 @@ small{
     }
     .works-img{
         flex-direction:row;
-    }
-    .works img{
-        width:325px;
-        height:400px;
-        margin:20px auto;
     }
     .works-header{
         width:275px;
