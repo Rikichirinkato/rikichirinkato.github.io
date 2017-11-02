@@ -1,0 +1,115 @@
+#buttons{
+	width:100%;
+	height:200px;
+	border:1px solid #DCDCDC;
+	display:block;
+}
+.button{
+	width:100px;
+	height:30px;
+	background:silver;
+	display:inline-block;
+	margin-top:80px;
+	text-align:center;
+}
+#edit{
+	margin-left:95px;
+}
+#fontFam{
+	width:100px;
+	height:30px;
+}
+#fontSize{
+	width:100px;
+	height:30px;
+}
+.radios{
+	display:inline-block;
+	margin-top:75px;
+	text-align:center;
+}
+#mainField{
+	margin-top:10px;
+	display:block;
+}
+#textarea{
+	margin-top:10px;
+	display:none;
+}
+#editBut{
+	width:100%;
+	height:200px;
+	border:1px solid #DCDCDC;
+}
+#textArea{
+	width:99%;
+	height:400px;
+	resize:none;
+}
+#addTable{
+	width:420px;
+	height:150px;
+	border:1px solid #DCDCDC;
+	margin:auto;
+	margin-top:20px;
+	padding:10px 0px 10px 10px;
+	display:none;
+}
+.smallField{
+	width:50px;
+}
+.lables{
+	margin:20px 20px 20px 20px;
+}
+#save{
+	margin-left:450px;
+}
+#addList{
+	width:200px;
+	height:150px;
+	margin:auto;
+	margin-top:20px;
+	padding:10px 0px 10px 10px;
+	border:1px solid #DCDCDC;
+	display:none;
+}
+#markType{
+	margin-top:10px;
+}
+.listBut{
+	margin-top:10px;
+}
+#color{
+	
+}
+#tableCol{
+	width:240px;
+	height:235px;
+	border:1px solid #aaaaaa;
+	background:white;
+	float:right;
+	margin:25px 50px;
+	display:none;
+	position:absolute;
+	
+}
+.tdTableCol{
+	width:90px;
+	height:70px;
+	border:1px solid #aaaaaa;
+}
+#tableColBg{
+	width:240px;
+	height:252px;
+	border:1px solid #aaaaaa;
+	background:white;
+	float:right;
+	margin:25px 50px;
+	display:none;
+	position:absolute;
+}
+.tdTableColBg{
+	width:90px;
+	height:70px;
+	border:1px solid #aaaaaa;
+}

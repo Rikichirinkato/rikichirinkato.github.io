@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="css/style6.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser.js"></script>
+</head>
+<body>
+    <div id="start"></div>
+    <script type="text/babel">
+        var App=React.createClass({
+            getInitialState:function(){
+                return{ tasklist:['collect underpants','???','get profit'] }
+            },
+            addTask:function(){
+                var input=document.getElementById('taskField').value;
+                var newState=this.state.tasklist;
+                newState.push(input);
+                input='';
+                this.setState({ tasklist:newState });
+            },
+            doloto:function(){
+                var that=this;
+                var elem=document.getElementsByClassName('itemTask');
+                for(var i=0;i<elem.length;i++){
+                     (function(index){
+                        elem[i].onclick=function(){
+                            var theState=that.state.tasklist;
+                            var newState=theState.splice(index,1);
+                            that.setState({ tasklist:theState });
+                            }    
+                    })(i);
+                }
+            },
+            render:function(){
+                return (
+                    <section id="list">
+                        <form>
+                            <input type="text" id="taskField" placeholder="Enter task"></input>
+                            <button id="addTask" type="button" onClick={this.addTask}>Add</button>
+                        </form>   
+                        <section id="taskList">
+                            {this.state.tasklist.map((x,y)=>{
+                                return( <article key={y} className="itemTask" onClick={this.doloto}>{x}</article> )
+                            })}
+                        </section>
+                    </section>
+                )
+            }
+        });
+        ReactDOM.render(
+            <App />,
+            document.getElementById('start')
+        );
+
+    </script>
+</body>
+</html>
