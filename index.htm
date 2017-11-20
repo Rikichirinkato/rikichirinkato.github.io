@@ -7,50 +7,71 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script src="https://code.jquery.com/jquery.min.js"></script>
 	<script src="main/main.js"></script>
-	<link href="css/style0.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Hi, my name is Roma</h1>
-        <h2>and this is my card</h2>
+        <a class="nav-item" href="index.htm">Home</a>
+        <a class="nav-item" href="№фищге">About Me</a>
+        <a class="nav-item" href="#works">My Works</a>
+        <a class="nav-item" href="#footer">Contact Me</a>
     </header>
     <main>
-        <h1>My works</h1>
-        <section>
-            <a href="index1.htm">
-                <img src="img/hom/icon.png">
-            </a>
-            <a href="index2.htm">
-                <img src="img/one/little-ipad.png">
-            </a>
-            <a href="index3.htm">
-                <img src="img/por/salon-blanc.png">
-            </a>
-            <a href="index4.htm">
-                <img src="img/udg/port-2.png">
-            </a>
-            <a href="index5.htm">
-                <img src="img/pen.jpg">
-            </a>
-            <a href="index6.htm">
-                <img src="img/todo.jpg">
-            </a>
+        <section class="headers">
+            <h1>Hi, my name is Roma</h1>
+            <h2>and this is my card</h2>
+        </section>
+        <section id="about">
+            <h1>About Me</h1>
+        </section>
+        <section class="my-works" id="works">
+            <h1 class="head">My works</h1>
+            <article class="works">
+                <a href="index1.htm">
+                    <img src="img/hom/icon.png">
+                    <h2 class="hover"><p>MakeUp</p></h2>
+                </a>
+                <a href="index2.htm">
+                    <img src="img/one/little-ipad.png">
+                    <h2 class="hover"><p>tinyone</p></h2>
+                </a>
+                <a href="index3.htm">
+                    <img src="img/por/salon-blanc.png">
+                    <h2 class="hover"><p>ELEGANT INTERIOR</p></h2>
+                </a>
+                <a href="index4.htm">
+                    <img src="img/udg/port-2.png">
+                    <h2 class="hover"><p class="hover">Urban Development Group</p></h2>
+                </a>
+                <a href="index5.htm">
+                    <img src="img/pen.jpg">
+                    <h2 class="hover"><p class="hover">Text Editor</p></h2>
+                </a>
+                <a href="index6.htm">
+                    <img src="img/todo.jpg">
+                    <h2 class="hover"><p class="hover">To Do List</p></h2>
+                </a>
+            </article>
         </section>
     </main>
-    <footer>
+    <footer id="footer">
         <a href="https://www.facebook.com/roman.krasko" class="contact">
-            <img class="footer-img"src="img/fb-art.png">
+            <img class="footer-img" src="img/fb-art.png" alt="FB">
             <p> My Facebook profile</p>
         </a>
             
         <a href="https://github.com/Rikichirinkato" class="contact">
+            <img class="footer-img" src="img/github-logo.png" alt="GH">
             <p> My GitHub Profile</p>
         </a>
         <a href="mailto:roman28krasko@gmail.com" class="contact">
-            <p>My e-mail:roman28krasko@gmail.com</p>
+            <img class="footer-img" src="img/mail.png" alt="fb">
+            <p>Write Me</p>
         </a>
         <a href="tel:+380936318557" class="contact">
-            <p>My tel. number:+380936318557</p>
+            <img class="footer-img" src="img/phone.png" alt="fb">
+            <p>Call Me</p>
         </a>
     </footer>
 </body>
