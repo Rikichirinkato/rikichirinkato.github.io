@@ -52,11 +52,15 @@ main{
     flex-direction:column;
     align-items: center;
 }
+#about{
+    padding-top:100px;
+}
 .my-works{
     width:100%;
     height:auto;
     display: flex;
     flex-direction: column;
+    padding-top:100px;
 }
 .works,.head{
     width:90%;

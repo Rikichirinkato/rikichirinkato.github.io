@@ -1,168 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>urban development group</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UDG</title>
     <link href="css/style4.css" rel="stylesheet">
+    <script type="text/javascript" src="main/main.js"></script>
 </head>
 <body>
     <header>
         <a href="" class="logo">
-            <img src="img/udg/logo.png">
-            <small>URBAN<br>DEVELOPMENT<br>GROUP</small>
+            <img src="img/udg/logo.png" alt="URBAN DEVELOPMENT GROUP logo">
+            <p class="logo-txt">URBAN DEVELOPMENT GROUP</p>
         </a>
         <nav>
-            <input type="checkbox" id="menu">
-            <ul class="navigation">
-                <li><a href="" class="nav-a">Home</a></li>
-                <li><a href="" class="nav-a">About Us</a></li>
-                <li><a href="" class="nav-a">Project</a></li>
-                <li><a href="" class="nav-a">Clients</a></li>
-                <li><a href="" class="nav-a">Partners</a></li>
-                <li><a href="" class="nav-a">News</a></li>
+            <input type="checkbox" id="checkForMenu"/>
+            <ul class="nav-list">
+                <li class="nav-list-item"><a href="">Home</a></li>
+                <li class="nav-list-item"><a href="">About us</a></li>
+                <li class="nav-list-item"><a href="">Project</a></li>
+                <li class="nav-list-item"><a href="">Clients</a></li>
+                <li class="nav-list-item"><a href="">Partners</a></li>
+                <li class="nav-list-item"><a href="">News</a></li>
             </ul>
-            <button class="language">En</button>
-            <label class="search" for="seek">🔍</label>
-            <input type="checkbox" id="seek">
-            <input type="search" class="search-field" placeholder="What are you looking for?">
-            <label class="menu" for="menu">
+            <input type="checkbox" id="searchField">
+            <article class="search">
+                <input type="text" name="seeeeeek" class="search-field" placeholder="What you are looking for?">
+                <label class="close" for="searchField">
+                    <div id="close-left"></div>
+                    <div id="close-right"></div>
+                </label>                
+            </article>
+            <article class="language">
+                <input type="radio" name="lang" id="eng" checked>
+                <label class="languages" for="eng">En</label>
+                <input type="radio" name="lang" id="ukr">
+                <label class="languages" for="ukr">Ua</label>
+            </article>
+            <label for="searchField" class="seek">
+                <img src="img/udg/glass.png" alt="magnifying glass icon">
+            </label>
+            <label for="checkForMenu" class="menu-btn">
                 <div class="sandwich"></div>
                 <div class="sandwich"></div>
                 <div class="sandwich"></div>
             </label>
         </nav>
+        <div class="horizon"></div>
         <section class="carousel">
-            <article class="carousel-header">
-                <span>←</span>
-                <span id="number">1 of 4</span>
-                <span>→</span>
-            <h1 class="carousel-title">HOSTEL FOR<br>STUDENTS OF KPI</h1>
+            <article class="arrows">
+                <span class="arrow" href="" id="to-the-left">←</span>
+                <span id="which">1</span>
+                <span class="carousel-header">of 4</span>
+                <span class="arrow" href="" id="to-the-right">→</span>
             </article>
+            <article class="slider" id="show">HOSTEL FOR STUDENTS OF KPI</article>
         </section>
     </header>
     <main>
-       <section class="about">
-           <div class="title">
-                <img src="img/udg/squares.png">
-                <h1 class="headers">WHO WE ARE?</h1>
-           </div>
-           <article class="about-group">
-               <img src="img/udg/about-group.png" class="about-group-pic">
-               <p class="about-text">Urban Development Group (UDG) – property investment, development and management company focusing on residential and commercial property development in CEE countries. Business was founded as a number of privately-held companies and investments mostly in residential property in 2008 and structured into group of companies with same investors in 2015. UDG boasts over USD 40 million worth of property developments in its up to five year development pipeline. The group has currently 7 ha of land under development for residential and commercial purposes. Operating as an integrated property development provider, UDG business activities cover land identification and acquisition, planning, financing, resource management, project marketing, building design and construction of residential developmentscommercial offices, industrial buildings and retail centers.<br>
-               <a href="" class="read-more">READ MORE→</a>
-               </p>
-           </article>
+        <section class="about">
+            <article class="section-title">
+                <img src="img/udg/squares.png" alt="header">  
+                <h2 class="title">WHO WE ARE?</h2>              
+            </article>
+            <article class="about-info">
+                <img src="img/udg/about-group.png" alt="office">
+                <div>
+                    <p class="about-info-text">Urban Development Group (UDG) – property investment, development and management company focusing on residential and commercial property development in CEE countries. Business was founded as a number of privately-held companies and investments mostly in residential property in 2008 and structured into group of companies with same investors in 2015. UDG boasts over USD 40 million worth of property developments in its up to five year development pipeline. The group has currently 7 ha of land under development for residential and commercial purposes. Operating as an integrated property development provider, UDG business activities cover land identification and acquisition, planning, financing, resource management, project marketing, building design and construction of residential developmentscommercial offices, industrial buildings and retail centers.</p>
+                    <a href="" class="read-more">READ MORE →</a>
+                </div>
+            </article>
         </section>
         <section class="portfolio">
             <article class="portfolio-title">
-                <div class="title">
-                    <img src="img/udg/squares.png">
-                    <h1 class="headers">OUR PROJECTS</h1>
+                <div class="section-title">
+                    <img src="img/udg/squares.png" alt="header">
+                    <h2 class="title">OUR PROJECTS</h2>
                 </div>
                 <a href="" class="read-more">SEE PORTFOLIO→</a>
             </article>
             <article class="portfolio-examples">
-                <section class="portfolio-examples-one">
-                    <h1 class="portfolio-headers">HOSTEL FOR STUDENT OF KPI</h1>
+                <a href="" class="portfolio-examples-item">
+                    <h2 class="portfolio-headers">HOSTEL FOR STUDENT OF KPI</h2>
                     <p>Bussines was founded a number of privately-held companies...</p>
                     <button class="portfolio-examples-btn">READ MORE</button>
-                </section>
-                <section class="portfolio-examples-two">
-                    <h1 class="portfolio-headers">HOUSE CLUB «NAGORNIY»</h1>
+                </a>
+                <a href="" class="portfolio-examples-item">
+                    <h2 class="portfolio-headers">HOUSE CLUB «NAGORNIY»</h2>
                     <button class="portfolio-examples-btn">READ MORE</button>
-                </section>
-                <section class="portfolio-examples-three">
-                    <h1 class="portfolio-headers">RESIDENTIAL COMPLEX «CAMPUS»</h1>
+                </a>
+                <a href="" class="portfolio-examples-item">
+                    <h2 class="portfolio-headers">RESIDENTIAL COMPLEX «CAMPUS»</h2>
                     <button class="portfolio-examples-btn">READ MORE</button>
-                </section>
-                <section class="portfolio-examples-four">
-                    <h1 class="portfolio-headers">HOSTEL FOR STUDENT OF KPI</h1>
+                </a>
+                <a href="" class="portfolio-examples-item">
+                    <h2 class="portfolio-headers">HOSTEL FOR STUDENT OF KPI</h2>
                     <button class="portfolio-examples-btn">READ MORE</button>
-                </section>
+                </a>
             </article>
         </section>
         <section class="statistic">
-            <article class="statistic-each">
-                <strong class="headers">40</strong>
-                <p>million dolars worth of property developments</p>
+            <article class="statistic-item">
+                <h2 class="statistic-item-h">40</h2>
+                <p class="statistic-item-txt">million dollars worth of property developments</p>
             </article>
-            <article class="statistic-each">
-                <strong class="headers">7</strong>
-                <p>ha land under development</p>
+            <article class="statistic-item">
+                <h2 class="statistic-item-h">7</h2>
+                <p class="statistic-item-txt">ha of land under development</p>
             </article>
-            <article class="statistic-each">
-                <strong class="headers">8</strong>
-                <p>years in investment market</p>
+            <article class="statistic-item">
+                <h2 class="statistic-item-h">8</h2>
+                <p class="statistic-item-txt">years in the investment market</p>
             </article>
         </section>
-        <section class="about">
-            <div class="title">
-                <h1 class="headers news-title"><img src="img/squares.png">NEWS</h1>
-           </div>
-            <section class="news">
-                <article class="article">
-                    <span class="date">20 april by </span>
-                    <a href="" class="whom">Elvis Aaron</a>
-                    <img src="img/udg/news1.png">
-                    <h1 class="article-title">HOW WE DO OUR WORK</h1>
-                    <p>Operating as an integrated property develompent provides, USB business activites cover land identification and acquisition, planing, financing, resource</p>
+        <section class="news">
+            <article class="section-title">
+                <img src="img/udg/squares.png" alt="header">  
+                <h2 class="title">NEWS</h2>              
+            </article>
+            <section class="news-all">
+                <article class="news-item">
+                    <span class="date">20 april by <a href="" class="whom">Elvis Aaron</a></span>
+                    <img src="img/udg/news1.png" alt="city">
+                    <a href="" class="news-item-title">HOW WE DO OUR WORK</a>
+                    <p class="news-item-txt">Operating as an integrated property develompent provides, USB business activites cover land identification and acquisition, planing, financing, resource</p>
                     <button class="news-more">READ MORE</button>
                 </article>
-                <article class="article">
-                    <span class="date">20 april by </span>
-                    <a href="" class="whom">Robert Jones</a>
-                    <img src="img/udg/news2.png">
-                    <h1 class="article-title">SO HOPEFUL THIS GIVES YOU A TINY INSIGHT</h1>
-                    <p>Operating as an integrated property develompent provides, USB business activites cover land identification and acquisition, planing, financing, resource</p>
+                <article class="news-item">
+                    <span class="date">20 april by <a href="" class="whom">Robert Jones</a></span>                    
+                    <img src="img/udg/news2.png" alt="dead end">
+                    <a href="" class="news-item-title">SO HOPEFUL THIS GIVES YOU A TINY INSIGHT</a>
+                    <p class="news-item-txt">Operating as an integrated property develompent provides, USB business activites cover land identification and acquisition, planing, financing, resource</p>
                     <button class="news-more">READ MORE</button>
                 </article>
-                <article class="article">
-                    <span class="date">20 april by </span>
-                    <a href="" class="whom">Roger Keith</a>
-                    <img src="img/udg/news3.png">
-                    <h1 class="article-title">SIX METER BELOW THE OCEAN'S </h1>
-                    <p>Operating as an integrated property develompent provides, USB business activites cover land identification and acquisition, planing, financing, resource</p>
+                <article class="news-item">
+                    <span class="date">20 april by <a href="" class="whom">Roger Keith</a></span>                    
+                    <img src="img/udg/news3.png" alt="street">
+                    <a href="" class="news-item-title">SIX METER BELOW THE OCEAN'S </a>
+                    <p class="news-item-txt">Operating as an integrated property develompent provides, USB business activites cover land identification and acquisition, planing, financing, resource</p>
                     <button class="news-more">READ MORE</button>
                 </article>
             </section>
+            <article class="news-carousel">
+                <div id="new-one"></div>
+                <div id="new-two"></div>
+                <div id="new-three"></div>
+            </article>
         </section>
-        <section class="connect">
-            <section class="contact">
-                <div class="title">
-                    <img src="img/udg/squares.png">
-                    <h1 class="headers">CONTACT US</h1>
-                </div>
-                <article class="contacts">
-                    <img src="img/udg/the-top.png"><span>5, Klovskiy Uzviz Street, 01021 Kiev, Ukraine</span>
-                </article>
-                <article class="contacts">
-                    <img src="img/udg/phone.png"><span>(044) 22019 50<br>(044) 220 56 72</span>
-                </article>
-                <article class="contacts">
-                    <img src="img/udg/mail.png"><a href="mailto:info@udg.com.ua">info@udg.com.ua</a>
-                </article>
-            </section>
-            <section class="write">
-                <h1 class="headers">WRITE US</h1>
+        <section class="contact">
+            <article class="contact-us">
+                <section class="section-title">
+                    <img src="img/udg/squares.png" alt="header">  
+                    <h2 class="title">CONTACT US</h2>              
+                </section>
+                <section class="contacts">
+                    <img src="img/udg/the-top.png" alt="top on map icon"><span>5, Klovskiy Uzviz Street, 01021 Kiev, Ukraine</span>
+                </section>
+                <section class="contacts">
+                    <img src="img/udg/phone.png" alt="phone icon"><span>(044) 22019 50<br>(044) 220 56 72</span>
+                </section>
+                <section class="contacts">
+                    <img src="img/udg/mail.png" alt="mail icon"><a href="mailto:info@udg.com.ua">info@udg.com.ua</a>
+                </section>
+            </article>
+            <article class="write">
+                <section class="section-title">
+                    <img src="img/udg/squares.png" alt="header">  
+                    <h2 class="title">WRITE US</h2>              
+                </section>
                 <form action="" name="message" class="form">
                     <input type="text" name="name" id="form-name" placeholder="Your name">
                     <input type="text" name="mail" id="form-mail" placeholder="Email">
                     <input type="text" name="massage" id="form-message" placeholder="Massage">
                     <input type="button" name="send" id="form-send" value="SEND MASSAGE">
                 </form>
-            </section>
+            </article>
         </section>
     </main>
-    <footer>
-        <small  class="copyright">© 2015 Standart development, All right reserved</small>
+     <footer>
+        <small  class="copyright">© 2016 Standart development, All right reserved</small>
         <aside class="links">
-            <a href=""><img src="img/udg/fb-icon.png"></a>
-            <a href=""><img src="img/udg/twitter-icon.png"></a>
-            <a href=""><img src="img/udg/vk-icon.png"></a>
+            <a href=""><img src="img/udg/fb-icon.png" alt="facebook icon"></a>
+            <a href=""><img src="img/udg/twitter-icon.png" alt="twitter icon"></a>
+            <a href=""><img src="img/udg/vk-icon.png" alt="vk icon"></a>
         </aside>
         <article class="by">
             <p>by <strong>OTACOYI</strong></p>
-            <img src="img/udg/circles.png">
+            <img src="img/udg/circles.png" alt="OTACOYI logo">
         </article>
     </footer>
 </body>
